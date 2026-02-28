@@ -1,0 +1,11 @@
+services:
+  paranoia:
+    build: .
+    container_name: paranoia
+    restart: unless-stopped
+    networks:
+      - caddy_shared
+
+networks:
+  caddy_shared:
+    external: true

@@ -1,0 +1,32 @@
+# Python
+__pycache__/
+*.py[cod]
+*.egg-info/
+dist/
+build/
+*.egg
+
+# Virtual environments
+venv/
+.venv/
+env/
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# Environment variables
+.env
+.env.*
+
+# Docker
+docker-compose.override.yml
+
+# Claude Code
+.claude/
+
+# OS
+.DS_Store
+Thumbs.db
