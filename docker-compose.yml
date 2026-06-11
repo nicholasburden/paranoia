@@ -3,6 +3,10 @@ services:
     build: .
     container_name: paranoia
     restart: unless-stopped
+    ports:
+      # Direct IP:port access (DNS-less clients); Caddy also proxies
+      # paranoia.servy.lan on the caddy_shared network.
+      - "8002:8000"
     networks:
       - caddy_shared
 
